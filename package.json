@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "memphis-dev": "^1.2.2"
+  }
+}
