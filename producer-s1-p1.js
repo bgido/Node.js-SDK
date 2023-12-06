@@ -57,7 +57,7 @@ const { memphis } = require("memphis-dev");
                 headers: headers,
                 asyncProduce: true
             });
-            await new Promise(resolve => setTimeout(resolve, 1000)); // 1 second delay
+            await new Promise(resolve => setTimeout(resolve, 5000)); // 1 second delay
         }
 
         memphisConnection.close();

@@ -40,6 +40,11 @@ const { memphis } = require('memphis-dev');
             stationName: 'eventlog-1',
             consumerName: 'consumer-NJS-Barak-1',
             consumerGroup: "NJS-Gido-1",
+            pullIntervalMs: 100, // defaults to 1000
+            batchSize: 1000, // defaults to 10
+            batchMaxTimeToWaitMs: 5000, // defaults to 5000
+            maxAckTimeMs: 30000, // defaults to 30000
+            maxMsgDeliveries: 2, // defaults to 2
         });
 
         consumer.setContext({ key: "value" });
